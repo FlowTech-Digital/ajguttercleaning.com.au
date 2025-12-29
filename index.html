@@ -1,70 +1,378 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>A&J Gutter Cleaning | Professional Gutter & Pressure Cleaning Sydney</title>
-  <meta name="description" content="Professional gutter cleaning and pressure cleaning services in Sydney. Family-owned business delivering reliable, quality service.">
-  <link rel="icon" type="image/png" href="/assets/favicon/favicon.png">
-  <style>
-    :root {
-      --navy: #1A2332;
-      --blue: #2563EB;
-      --white: #FFFFFF;
-      --gray: #F3F4F6;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A&J Gutter Cleaning provides professional gutter cleaning, pressure washing, chimney sweeping, and fireplace installation services in the Hawkesbury region. Fully insured, AHHA certified. Call 0456 079 273.">
+    <meta name="keywords" content="gutter cleaning, pressure washing, soft washing, chimney sweeping, fireplace installation, Freemans Reach, Hawkesbury, NSW, exterior cleaning">
+    <meta name="author" content="A&J Gutter Cleaning">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ajguttercleaning.com.au/">
+    <meta property="og:title" content="A&J Gutter Cleaning | Professional Exterior Cleaning Services">
+    <meta property="og:description" content="Brighten your home and protect your assets. Professional gutter cleaning, pressure washing, and fireplace services in the Hawkesbury region.">
+    <meta property="og:image" content="https://ajguttercleaning.com.au/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="A&J Gutter Cleaning | Professional Exterior Cleaning Services">
+    <meta name="twitter:description" content="Brighten your home and protect your assets. Professional gutter cleaning, pressure washing, and fireplace services.">
+    
+    <title>A&J Gutter Cleaning | Professional Exterior Cleaning Services | Hawkesbury NSW</title>
+    
+    <link rel="canonical" href="https://ajguttercleaning.com.au/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "A&J Gutter Cleaning",
+        "image": "https://ajguttercleaning.com.au/images/logo.png",
+        "url": "https://ajguttercleaning.com.au",
+        "telephone": "+61456079273",
+        "email": "anjguttercleaning@gmail.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Freemans Reach",
+            "addressLocality": "Freemans Reach",
+            "addressRegion": "NSW",
+            "postalCode": "2756",
+            "addressCountry": "AU"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -33.5533,
+            "longitude": 150.7844
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "07:00",
+            "closes": "17:00"
+        },
+        "priceRange": "$$",
+        "areaServed": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": -33.5533,
+                "longitude": 150.7844
+            },
+            "geoRadius": "50000"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Exterior Cleaning Services",
+            "itemListElement": [
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gutter Cleaning"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Chimney Sweeping"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fireplace Installation"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pressure Washing"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Soft Washing"}}
+            ]
+        }
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--navy); }
-    .hero { background: linear-gradient(135deg, var(--navy) 0%, #2d3748 100%); color: var(--white); padding: 4rem 2rem; text-align: center; min-height: 60vh; display: flex; flex-direction: column; justify-content: center; }
-    .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-    .hero p { font-size: 1.25rem; opacity: 0.9; max-width: 600px; margin: 0 auto 2rem; }
-    .btn { display: inline-block; background: var(--blue); color: var(--white); padding: 1rem 2rem; text-decoration: none; border-radius: 8px; font-weight: 600; transition: transform 0.2s; }
-    .btn:hover { transform: translateY(-2px); }
-    .services { padding: 4rem 2rem; background: var(--gray); }
-    .services h2 { text-align: center; margin-bottom: 2rem; color: var(--navy); }
-    .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 1200px; margin: 0 auto; }
-    .service-card { background: var(--white); padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-    .service-card h3 { color: var(--blue); margin-bottom: 1rem; }
-    .contact { padding: 4rem 2rem; text-align: center; }
-    .contact h2 { margin-bottom: 1rem; }
-    .phone { font-size: 1.5rem; color: var(--blue); font-weight: 700; }
-    footer { background: var(--navy); color: var(--white); padding: 2rem; text-align: center; }
-  </style>
+    </script>
 </head>
 <body>
-  <section class="hero">
-    <h1>A&J Gutter Cleaning</h1>
-    <p>Professional gutter cleaning and pressure cleaning services across Sydney. Family-owned, reliable, and committed to quality.</p>
-    <a href="tel:+61400000000" class="btn">Call Now</a>
-  </section>
-  
-  <section class="services">
-    <h2>Our Services</h2>
-    <div class="service-grid">
-      <div class="service-card">
-        <h3>Gutter Cleaning</h3>
-        <p>Complete gutter cleaning service including debris removal, downpipe clearing, and gutter inspection. Keep your home protected from water damage.</p>
-      </div>
-      <div class="service-card">
-        <h3>Pressure Cleaning</h3>
-        <p>High-pressure cleaning for driveways, pathways, decks, and outdoor areas. Restore surfaces to like-new condition.</p>
-      </div>
-      <div class="service-card">
-        <h3>Roof Cleaning</h3>
-        <p>Safe and effective roof cleaning to remove moss, lichen, and debris. Extend the life of your roof.</p>
-      </div>
+    <!-- Sticky Phone Header -->
+    <div class="sticky-phone">
+        <a href="tel:0456079273" class="phone-cta">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            <span>0456 079 273</span>
+        </a>
     </div>
-  </section>
-  
-  <section class="contact">
-    <h2>Get a Free Quote</h2>
-    <p>Contact Adin today for a free, no-obligation quote.</p>
-    <p class="phone">Call: 0400 000 000</p>
-  </section>
-  
-  <footer>
-    <p>&copy; 2025 A&J Gutter Cleaning. All rights reserved.</p>
-    <p>Servicing Sydney and surrounding areas.</p>
-  </footer>
+
+    <!-- Navigation -->
+    <header class="main-header">
+        <nav class="nav-container">
+            <a href="/" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 55 L50 15 L90 55" stroke="currentColor" stroke-width="4" fill="none"/>
+                        <path d="M25 55 L50 30 L75 55" stroke="currentColor" stroke-width="3" fill="none"/>
+                        <rect x="85" y="15" width="5" height="25" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">A&J</span>
+                    <span class="logo-tagline">Gutter Cleaning</span>
+                </div>
+            </a>
+            
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="results-matter.html">Results</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="nav-phone"><a href="tel:0456079273">0456 079 273</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Brighten Your Home<br>& Protect Your Assets</h1>
+            <p class="hero-subtitle">Professional exterior cleaning services for the Hawkesbury region</p>
+            <div class="hero-ctas">
+                <a href="tel:0456079273" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    Call Now
+                </a>
+                <a href="contact.html" class="btn btn-secondary">Get a Quote</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="trust-badges">
+        <div class="container">
+            <div class="badge-grid">
+                <div class="badge">
+                    <div class="badge-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg>
+                    </div>
+                    <span>Fully Insured</span>
+                </div>
+                <div class="badge">
+                    <div class="badge-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                    </div>
+                    <span>AHHA Certified</span>
+                </div>
+                <div class="badge">
+                    <div class="badge-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                    </div>
+                    <span>7+ Years Experience</span>
+                </div>
+                <div class="badge">
+                    <div class="badge-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+                    </div>
+                    <span>No Sub-Contractors</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">What We Do</h2>
+            <p class="section-intro">A&J is your one-stop destination for all your exterior cleaning needs. We specialise in comprehensive exterior cleaning services that keep your home or business looking its best—while protecting it from costly damage.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><line x1="3" y1="9" x2="21" y2="9"></line><path d="M9 22V12h6v10"></path></svg>
+                    </div>
+                    <h3>Gutter Cleaning</h3>
+                    <p>Prevent water damage and protect your property with our thorough gutter cleaning service. We remove leaves, debris, and blockages to ensure proper drainage.</p>
+                    <ul class="service-features">
+                        <li>Full debris removal</li>
+                        <li>Downpipe flushing</li>
+                        <li>Before & after photos</li>
+                        <li>Roof inspection included</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    </div>
+                    <h3>Chimney Sweeping</h3>
+                    <p>Keep your chimney safe and efficient with professional sweeping. Essential maintenance for wood fire season preparation.</p>
+                    <ul class="service-features">
+                        <li>Creosote removal</li>
+                        <li>Safety inspection</li>
+                        <li>Flue cleaning</li>
+                        <li>Cap inspection</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card featured">
+                    <div class="service-badge">AHHA Certified</div>
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 3v4l-2 2v6l2 2v4"></path><path d="M16 3v4l2 2v6l-2 2v4"></path><rect x="4" y="9" width="16" height="6" rx="1"></rect><path d="M12 9v6"></path></svg>
+                    </div>
+                    <h3>Fireplace Installs & Maintenance</h3>
+                    <p>Every installation is done to code, ensuring safe and efficient venting for fireplaces. Adin has completed the AHHA Certified Installer Program.</p>
+                    <ul class="service-features">
+                        <li>Code-compliant installation</li>
+                        <li>Safe venting systems</li>
+                        <li>Ongoing maintenance</li>
+                        <li>Safety certification</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path></svg>
+                    </div>
+                    <h3>Pressure Washing</h3>
+                    <p>Restore your driveways, pathways, and exterior surfaces to their original condition with our high-pressure cleaning service.</p>
+                    <ul class="service-features">
+                        <li>Driveways & paths</li>
+                        <li>Concrete cleaning</li>
+                        <li>Fence restoration</li>
+                        <li>Commercial surfaces</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                    </div>
+                    <h3>Soft Washing</h3>
+                    <p>Gentle yet effective cleaning for delicate surfaces. Perfect for roofs, rendered walls, and facades that need careful treatment.</p>
+                    <ul class="service-features">
+                        <li>Roof cleaning</li>
+                        <li>Render & facades</li>
+                        <li>Low-pressure safe</li>
+                        <li>Algae & mould removal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>Who Does Our Work?</h2>
+                    <p class="lead">Led by Adin, a qualified plumber with experience in both residential and commercial work, A&J Gutter Cleaning was founded to provide dependable and professional exterior maintenance services you can trust.</p>
+                    <p><strong>We do not use sub-contractors and Adin does 100% of our work.</strong></p>
+                    <p>With a Certificate III in Plumbing and 7 years of hands-on experience, plus certification in RIIWHS204E Work Safely at Heights, you can be confident your property is in capable hands.</p>
+                    <a href="about.html" class="btn btn-outline">Learn More About Us</a>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>
+                        <span>Professional at work</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Preview -->
+    <section class="testimonials-preview">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Very professional, reliable and competitive rates. Adin gets the job done and communicates with our elderly customers always showing respect and assisting wherever he can."</blockquote>
+                    <cite>— Rafael Andres, CEO Bridging Care</cite>
+                    <span class="testimonial-source">Google Review</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>"Adin quoted an amount before starting the job and once he started, he came over to me and advised that he will charge me less as the work is less. I liked his honesty."</blockquote>
+                    <cite>— Kumaresh</cite>
+                    <span class="testimonial-source">HiPages</span>
+                </div>
+            </div>
+            <div class="testimonials-cta">
+                <a href="results-matter.html" class="btn btn-outline">See More Results & Reviews</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Brighten Your Home?</h2>
+            <p>Get in touch today for a free quote on our professional exterior cleaning services.</p>
+            <div class="cta-buttons">
+                <a href="tel:0456079273" class="btn btn-primary btn-large">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    Call 0456 079 273
+                </a>
+                <a href="mailto:anjguttercleaning@gmail.com" class="btn btn-secondary btn-large">Email Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 100 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 55 L50 15 L90 55" stroke="currentColor" stroke-width="4" fill="none"/>
+                                <path d="M25 55 L50 30 L75 55" stroke="currentColor" stroke-width="3" fill="none"/>
+                                <rect x="85" y="15" width="5" height="25" fill="currentColor"/>
+                            </svg>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-name">A&J</span>
+                            <span class="logo-tagline">Gutter Cleaning</span>
+                        </div>
+                    </div>
+                    <p>Professional exterior cleaning services for the Hawkesbury region. Fully insured, AHHA certified, and committed to quality.</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:0456079273">0456 079 273</a></li>
+                        <li><a href="mailto:anjguttercleaning@gmail.com">anjguttercleaning@gmail.com</a></li>
+                        <li>Freemans Reach, NSW 2756</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-hours">
+                    <h4>Hours</h4>
+                    <ul>
+                        <li>Monday – Friday</li>
+                        <li>7am – 5pm</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Gutter Cleaning</a></li>
+                        <li><a href="#services">Chimney Sweeping</a></li>
+                        <li><a href="#services">Fireplace Installs</a></li>
+                        <li><a href="#services">Pressure Washing</a></li>
+                        <li><a href="#services">Soft Washing</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 A&J Gutter Cleaning. All rights reserved.</p>
+                <p class="footer-credit">Website by <a href="https://flowtechdigital.com.au" target="_blank" rel="noopener">FlowTech Digital</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
