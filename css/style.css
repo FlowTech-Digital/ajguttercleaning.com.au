@@ -1,7 +1,7 @@
 /* ===========================================
    A&J Gutter Cleaning - Professional Styles
    FlowTech Digital Portfolio Project
-   Version: 1.0.1 - Logo Display Fix
+   Version: 1.0.2 - Gallery Image Display Fix
    =========================================== */
 
 /* === CSS Custom Properties === */
@@ -950,6 +950,7 @@ p {
 }
 
 .gallery-image img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1026,178 +1027,4 @@ p {
     border: 1px solid var(--color-gray-200);
     border-radius: var(--radius-lg);
     padding: var(--space-2xl);
-    text-align: center;
-    transition: var(--transition-base);
-}
-
-.qualification-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
-}
-
-.qualification-icon {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto var(--space-lg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--color-gray-100);
-    border-radius: var(--radius-full);
-    color: var(--color-primary);
-}
-
-.qualification-card h3 {
-    margin-bottom: var(--space-md);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.qualification-card p {
-    color: var(--color-gray-500);
-    font-size: var(--text-sm);
-    line-height: 1.7;
-}
-
-.qualification-card a {
-    color: var(--color-highlight);
-    text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-    .qualifications-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Contact Page */
-.contact-hero {
-    background: var(--gradient-dark);
-    padding: calc(36px + var(--header-height) + var(--space-4xl)) 0 var(--space-4xl);
-    text-align: center;
-    color: var(--color-white);
-}
-
-.contact-hero h1 {
-    color: var(--color-white);
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: var(--space-lg);
-}
-
-.contact-hero p {
-    font-size: var(--text-xl);
-    opacity: 0.9;
-}
-
-.contact-section {
-    padding: var(--space-4xl) 0;
-}
-
-.contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-3xl);
-}
-
-.contact-info h2 {
-    margin-bottom: var(--space-xl);
-}
-
-.contact-details {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-lg);
-}
-
-.contact-item {
-    display: flex;
-    align-items: flex-start;
-    gap: var(--space-md);
-}
-
-.contact-icon {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--color-gray-100);
-    border-radius: var(--radius-full);
-    color: var(--color-primary);
-    flex-shrink: 0;
-}
-
-.contact-text h4 {
-    margin-bottom: var(--space-xs);
-}
-
-.contact-text a,
-.contact-text p {
-    color: var(--color-gray-500);
-    margin: 0;
-}
-
-.contact-text a:hover {
-    color: var(--color-highlight);
-}
-
-.contact-form h2 {
-    margin-bottom: var(--space-xl);
-}
-
-.form-group {
-    margin-bottom: var(--space-lg);
-}
-
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-md);
-}
-
-.form-group label {
-    display: block;
-    font-family: var(--font-heading);
-    font-weight: 500;
-    margin-bottom: var(--space-sm);
-    color: var(--color-gray-600);
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: var(--space-md);
-    border: 1px solid var(--color-gray-300);
-    border-radius: var(--radius-md);
-    font-family: var(--font-body);
-    font-size: var(--text-base);
-    transition: var(--transition-fast);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--color-primary);
-    box-shadow: 0 0 0 3px rgba(26, 26, 46, 0.1);
-}
-
-.form-group textarea {
-    min-height: 150px;
-    resize: vertical;
-}
-
-@media (max-width: 768px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .form-row {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* === Utilities === */
-.text-center { text-align: center; }
-.mb-0 { margin-bottom: 0; }
-.mt-xl { margin-top: var(--space-xl); }
+    text-align
