@@ -1,7 +1,7 @@
 /* ===========================================
    A&J Gutter Cleaning - Professional Styles
    FlowTech Digital Portfolio Project
-   Version: 1.0.0
+   Version: 1.0.1 - Logo Display Fix
    =========================================== */
 
 /* === CSS Custom Properties === */
@@ -283,6 +283,21 @@ p {
     width: 50px;
     height: 35px;
     color: var(--color-primary);
+}
+
+/* Logo Images - FIX for Logo.jpg display issue */
+.logo-img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.footer-logo-img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 .logo-text {
