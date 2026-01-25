@@ -1,7 +1,7 @@
 /* ===========================================
    A&J Gutter Cleaning - Professional Styles
    FlowTech Digital Portfolio Project
-   Version: 1.0.5 - Precise Color Match & Larger Logo
+   Version: 1.0.6 - Logo Position Left Shift
    =========================================== */
 
 /* === CSS Custom Properties === */
@@ -254,7 +254,7 @@ p {
 }
 
 /* === Header === */
-/* v1.0.5: Precise color match #141428 and larger logo 130px */
+/* v1.0.6: Logo position left shift */
 .main-header {
     position: fixed;
     top: 36px;
@@ -267,10 +267,11 @@ p {
     transition: var(--transition-base);
 }
 
+/* v1.0.6: Reduced left padding to shift logo left */
 .nav-container {
     max-width: var(--container-max);
     margin: 0 auto;
-    padding: var(--space-md) var(--space-lg);
+    padding: var(--space-md) var(--space-lg) var(--space-md) var(--space-sm);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -906,6 +907,11 @@ p {
     /* Smaller logo on mobile */
     .logo-img {
         height: 90px !important;
+    }
+    
+    /* v1.0.6: Reset padding on mobile for better alignment */
+    .nav-container {
+        padding: var(--space-md) var(--space-md);
     }
 }
 
