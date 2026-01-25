@@ -1,7 +1,7 @@
 /* ===========================================
    A&J Gutter Cleaning - Professional Styles
    FlowTech Digital Portfolio Project
-   Version: 1.0.3 - Header Color & Logo Size Fix
+   Version: 1.0.4 - Header Color Match & Larger Logo
    =========================================== */
 
 /* === CSS Custom Properties === */
@@ -12,6 +12,9 @@
     --color-secondary: #16213e;
     --color-accent: #0f3460;
     --color-highlight: #e94560;
+    
+    /* Header Color - matched to logo background */
+    --color-header: #0f1219;
     
     /* Neutrals */
     --color-white: #ffffff;
@@ -75,7 +78,7 @@
     
     /* Layout */
     --container-max: 1200px;
-    --header-height: 100px;
+    --header-height: 120px;
 }
 
 /* === Reset & Base === */
@@ -251,14 +254,14 @@ p {
 }
 
 /* === Header === */
-/* v1.0.3: Dark blue header to match logo background */
+/* v1.0.4: Darker header to match logo background exactly */
 .main-header {
     position: fixed;
     top: 36px;
     left: 0;
     right: 0;
     z-index: 999;
-    background: var(--color-primary);
+    background: var(--color-header);
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow-md);
     transition: var(--transition-base);
@@ -286,10 +289,10 @@ p {
     color: var(--color-white);
 }
 
-/* Logo Images - v1.0.3: Increased size */
+/* Logo Images - v1.0.4: Larger size (110px) */
 .logo-img {
     display: block;
-    height: 90px !important;
+    height: 110px !important;
     width: auto !important;
     max-width: 100%;
     object-fit: contain;
@@ -297,7 +300,7 @@ p {
 
 .footer-logo-img {
     display: block;
-    height: 70px !important;
+    height: 80px !important;
     width: auto !important;
     max-width: 100%;
     object-fit: contain;
@@ -833,13 +836,13 @@ p {
         display: flex;
     }
     
-    /* v1.0.3: Mobile menu with dark background */
+    /* v1.0.4: Mobile menu with dark background */
     .nav-menu {
         position: fixed;
-        top: calc(36px + 90px);
+        top: calc(36px + 100px);
         left: 0;
         right: 0;
-        background: var(--color-primary);
+        background: var(--color-header);
         flex-direction: column;
         padding: var(--space-xl);
         gap: var(--space-lg);
@@ -900,9 +903,9 @@ p {
         align-items: center;
     }
     
-    /* v1.0.3: Smaller logo on mobile */
+    /* v1.0.4: Smaller logo on mobile */
     .logo-img {
-        height: 70px !important;
+        height: 80px !important;
     }
 }
 
