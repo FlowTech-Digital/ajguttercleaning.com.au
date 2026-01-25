@@ -1,7 +1,7 @@
 /* ===========================================
    A&J Gutter Cleaning - Professional Styles
    FlowTech Digital Portfolio Project
-   Version: 1.0.4 - Header Color Match & Larger Logo
+   Version: 1.0.5 - Precise Color Match & Larger Logo
    =========================================== */
 
 /* === CSS Custom Properties === */
@@ -13,8 +13,8 @@
     --color-accent: #0f3460;
     --color-highlight: #e94560;
     
-    /* Header Color - matched to logo background */
-    --color-header: #0f1219;
+    /* Header color - precisely matched to logo background */
+    --color-header: #141428;
     
     /* Neutrals */
     --color-white: #ffffff;
@@ -78,7 +78,7 @@
     
     /* Layout */
     --container-max: 1200px;
-    --header-height: 120px;
+    --header-height: 140px;
 }
 
 /* === Reset & Base === */
@@ -254,7 +254,7 @@ p {
 }
 
 /* === Header === */
-/* v1.0.4: Darker header to match logo background exactly */
+/* v1.0.5: Precise color match #141428 and larger logo 130px */
 .main-header {
     position: fixed;
     top: 36px;
@@ -289,10 +289,10 @@ p {
     color: var(--color-white);
 }
 
-/* Logo Images - v1.0.4: Larger size (110px) */
+/* Logo Images - v1.0.5: Much larger logo (130px) */
 .logo-img {
     display: block;
-    height: 110px !important;
+    height: 130px !important;
     width: auto !important;
     max-width: 100%;
     object-fit: contain;
@@ -325,7 +325,7 @@ p {
     letter-spacing: 0.5px;
 }
 
-/* Navigation - v1.0.3: White text on dark header */
+/* Navigation - White text on dark header */
 .nav-menu {
     display: flex;
     align-items: center;
@@ -381,7 +381,7 @@ p {
     display: none;
 }
 
-/* Mobile Menu Toggle - v1.0.3: White bars on dark header */
+/* Mobile Menu Toggle - White bars on dark header */
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
@@ -836,10 +836,10 @@ p {
         display: flex;
     }
     
-    /* v1.0.4: Mobile menu with dark background */
+    /* Mobile menu with dark background */
     .nav-menu {
         position: fixed;
-        top: calc(36px + 100px);
+        top: calc(36px + 120px);
         left: 0;
         right: 0;
         background: var(--color-header);
@@ -903,9 +903,9 @@ p {
         align-items: center;
     }
     
-    /* v1.0.4: Smaller logo on mobile */
+    /* Smaller logo on mobile */
     .logo-img {
-        height: 80px !important;
+        height: 90px !important;
     }
 }
 
