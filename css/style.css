@@ -1,7 +1,7 @@
 /* ===========================================
    A&J Gutter Cleaning - Professional Styles
    FlowTech Digital Portfolio Project
-   Version: 1.0.6 - Logo Position Left Shift
+   Version: 1.0.7 - Full-width header for left logo alignment
    =========================================== */
 
 /* === CSS Custom Properties === */
@@ -254,7 +254,7 @@ p {
 }
 
 /* === Header === */
-/* v1.0.6: Logo position left shift */
+/* v1.0.7: Full-width header for left logo alignment */
 .main-header {
     position: fixed;
     top: 36px;
@@ -267,11 +267,12 @@ p {
     transition: var(--transition-base);
 }
 
-/* v1.0.6: Reduced left padding to shift logo left */
+/* v1.0.7: Full-width nav container - logo closer to left edge */
 .nav-container {
-    max-width: var(--container-max);
-    margin: 0 auto;
-    padding: var(--space-md) var(--space-lg) var(--space-md) var(--space-sm);
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: var(--space-md) var(--space-xl) var(--space-md) var(--space-lg);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -909,7 +910,7 @@ p {
         height: 90px !important;
     }
     
-    /* v1.0.6: Reset padding on mobile for better alignment */
+    /* v1.0.7: Balanced padding on mobile */
     .nav-container {
         padding: var(--space-md) var(--space-md);
     }
