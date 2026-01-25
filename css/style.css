@@ -1,7 +1,7 @@
 /* ===========================================
    A&J Gutter Cleaning - Professional Styles
    FlowTech Digital Portfolio Project
-   Version: 1.0.2 - Gallery Image Display Fix
+   Version: 1.0.3 - Header Color & Logo Size Fix
    =========================================== */
 
 /* === CSS Custom Properties === */
@@ -75,7 +75,7 @@
     
     /* Layout */
     --container-max: 1200px;
-    --header-height: 80px;
+    --header-height: 100px;
 }
 
 /* === Reset & Base === */
@@ -251,15 +251,16 @@ p {
 }
 
 /* === Header === */
+/* v1.0.3: Dark blue header to match logo background */
 .main-header {
     position: fixed;
     top: 36px;
     left: 0;
     right: 0;
     z-index: 999;
-    background: rgba(255, 255, 255, 0.95);
+    background: var(--color-primary);
     backdrop-filter: blur(10px);
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-md);
     transition: var(--transition-base);
 }
 
@@ -282,20 +283,22 @@ p {
 .logo-icon {
     width: 50px;
     height: 35px;
-    color: var(--color-primary);
+    color: var(--color-white);
 }
 
-/* Logo Images - FIX for Logo.jpg display issue */
+/* Logo Images - v1.0.3: Increased size */
 .logo-img {
     display: block;
-    height: auto;
+    height: 90px !important;
+    width: auto !important;
     max-width: 100%;
     object-fit: contain;
 }
 
 .footer-logo-img {
     display: block;
-    height: auto;
+    height: 70px !important;
+    width: auto !important;
     max-width: 100%;
     object-fit: contain;
 }
@@ -310,16 +313,16 @@ p {
     font-family: var(--font-heading);
     font-size: var(--text-xl);
     font-weight: 700;
-    color: var(--color-primary);
+    color: var(--color-white);
 }
 
 .logo-tagline {
     font-size: var(--text-xs);
-    color: var(--color-gray-500);
+    color: var(--color-gray-400);
     letter-spacing: 0.5px;
 }
 
-/* Navigation */
+/* Navigation - v1.0.3: White text on dark header */
 .nav-menu {
     display: flex;
     align-items: center;
@@ -331,7 +334,7 @@ p {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--color-gray-600);
+    color: var(--color-white);
     position: relative;
 }
 
@@ -351,26 +354,31 @@ p {
     width: 100%;
 }
 
+.nav-menu a:hover {
+    color: var(--color-highlight);
+}
+
 .nav-menu a.active {
-    color: var(--color-primary);
+    color: var(--color-white);
 }
 
 .nav-phone a {
-    background: var(--color-primary);
+    background: var(--color-highlight);
     color: var(--color-white) !important;
     padding: var(--space-sm) var(--space-md);
     border-radius: var(--radius-md);
 }
 
 .nav-phone a:hover {
-    background: var(--color-highlight);
+    background: var(--color-white);
+    color: var(--color-primary) !important;
 }
 
 .nav-phone a::after {
     display: none;
 }
 
-/* Mobile Menu Toggle */
+/* Mobile Menu Toggle - v1.0.3: White bars on dark header */
 .mobile-menu-toggle {
     display: none;
     flex-direction: column;
@@ -381,7 +389,7 @@ p {
 .mobile-menu-toggle span {
     width: 25px;
     height: 2px;
-    background: var(--color-primary);
+    background: var(--color-white);
     transition: var(--transition-base);
 }
 
@@ -825,12 +833,13 @@ p {
         display: flex;
     }
     
+    /* v1.0.3: Mobile menu with dark background */
     .nav-menu {
         position: fixed;
-        top: calc(36px + 70px);
+        top: calc(36px + 90px);
         left: 0;
         right: 0;
-        background: var(--color-white);
+        background: var(--color-primary);
         flex-direction: column;
         padding: var(--space-xl);
         gap: var(--space-lg);
@@ -889,6 +898,11 @@ p {
     .hero-ctas {
         flex-direction: column;
         align-items: center;
+    }
+    
+    /* v1.0.3: Smaller logo on mobile */
+    .logo-img {
+        height: 70px !important;
     }
 }
 
