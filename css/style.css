@@ -1,7 +1,7 @@
 /* ===========================================
    A&J Gutter Cleaning - Professional Styles
    FlowTech Digital Portfolio Project
-   Version: 1.1.0 - Mobile header hard left
+   Version: 1.1.1 - NUCLEAR mobile header fix
    =========================================== */
 
 /* === CSS Custom Properties === */
@@ -838,22 +838,42 @@ p {
         display: flex;
     }
     
-    /* v1.1.0: Mobile header HARD LEFT - zero left padding */
-    .nav-container {
-        justify-content: flex-start !important;
-        padding: var(--space-sm) var(--space-md) var(--space-sm) 0 !important;
+    /* v1.1.1: NUCLEAR mobile header fix - explicit left alignment at ALL levels */
+    .main-header {
         text-align: left !important;
     }
     
-    /* Force logo to left edge */
-    .logo {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+    .nav-container {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        padding: 8px 16px 8px 0 !important;
+        text-align: left !important;
     }
     
+    /* CRITICAL: Force logo container to left with explicit flex properties */
+    .logo {
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        flex: 0 0 auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    /* Force logo image to left edge */
+    .logo-img {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    /* Push menu toggle to far right */
     .mobile-menu-toggle {
-        margin-left: auto;
-        margin-right: 0;
+        display: flex !important;
+        flex: 0 0 auto !important;
+        margin-left: auto !important;
+        margin-right: 0 !important;
     }
     
     /* Mobile menu with dark background */
