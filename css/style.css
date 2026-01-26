@@ -1,7 +1,7 @@
 /* ===========================================
    A&J Gutter Cleaning - Professional Styles
    FlowTech Digital Portfolio Project
-   Version: 1.0.9 - Mobile header flush left
+   Version: 1.1.0 - Mobile header hard left
    =========================================== */
 
 /* === CSS Custom Properties === */
@@ -838,15 +838,22 @@ p {
         display: flex;
     }
     
-    /* v1.0.9: Mobile header flush left - minimal left padding */
+    /* v1.1.0: Mobile header HARD LEFT - zero left padding */
     .nav-container {
-        justify-content: flex-start;
-        gap: var(--space-sm);
-        padding: var(--space-sm) var(--space-md) var(--space-sm) 0.5rem;
+        justify-content: flex-start !important;
+        padding: var(--space-sm) var(--space-md) var(--space-sm) 0 !important;
+        text-align: left !important;
+    }
+    
+    /* Force logo to left edge */
+    .logo {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
     
     .mobile-menu-toggle {
         margin-left: auto;
+        margin-right: 0;
     }
     
     /* Mobile menu with dark background */
@@ -965,21 +972,7 @@ p {
 .gallery-item {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-md);
-    background: var(--color-gray-100);
-    padding: var(--space-lg);
-    border-radius: var(--radius-lg);
-}
-
-.gallery-image {
-    position: relative;
-    aspect-ratio: 4/3;
-    border-radius: var(--radius-md);
-    overflow: hidden;
-    background: var(--color-gray-200);
-}
-
-/* Gallery Image Fix - v1.0.2 */
+    gap: var(--space-.2 */
 .gallery-image img {
     display: block;
     width: 100%;
