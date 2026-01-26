@@ -1,7 +1,7 @@
 /* ===========================================
    A&J Gutter Cleaning - Professional Styles
    FlowTech Digital Portfolio Project
-   Version: 1.0.8 - Mobile header left-aligned
+   Version: 1.0.9 - Mobile header flush left
    =========================================== */
 
 /* === CSS Custom Properties === */
@@ -838,11 +838,11 @@ p {
         display: flex;
     }
     
-    /* v1.0.8: Mobile header left-aligned */
+    /* v1.0.9: Mobile header flush left - minimal left padding */
     .nav-container {
         justify-content: flex-start;
-        gap: var(--space-md);
-        padding: var(--space-md) var(--space-md);
+        gap: var(--space-sm);
+        padding: var(--space-sm) var(--space-md) var(--space-sm) 0.5rem;
     }
     
     .mobile-menu-toggle {
