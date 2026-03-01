@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en-AU">
 <head>
+    <!-- Google Analytics GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9JJ1PK6T39"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9JJ1PK6T39');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A&J Gutter Cleaning provides professional gutter cleaning, pressure washing, chimney sweeping, and fireplace installation services in the Hawkesbury and Hills regions. Fully insured, AHHA certified. Call 0456 381 191.">
-    <meta name="keywords" content="gutter cleaning, pressure washing, soft washing, chimney sweeping, fireplace installation, Freemans Reach, Hawkesbury, Hills, NSW, exterior cleaning">
+    <meta name="description" content="Professional gutter cleaning, pressure washing & exterior cleaning in Hawkesbury & Hills District NSW. Fully insured, AHHA certified. Single storey from $220. Free quotes — call 0456 381 191.">
+    <meta name="keywords" content="gutter cleaning, pressure washing, soft washing, chimney sweeping, fireplace installation, Freemans Reach, Hawkesbury, Hills District, NSW, exterior cleaning">
     <meta name="author" content="A&J Gutter Cleaning">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ajguttercleaning.com.au/">
-    <meta property="og:title" content="A&J Gutter Cleaning | Professional Exterior Cleaning Services">
-    <meta property="og:description" content="Brighten your home and protect your assets. Professional gutter cleaning, pressure washing, and fireplace services in the Hawkesbury and Hills regions.">
-    <meta property="og:image" content="https://ajguttercleaning.com.au/images/og-image.jpg">
+    <meta property="og:title" content="A&J Gutter Cleaning | Professional Exterior Cleaning | Hawkesbury & Hills NSW">
+    <meta property="og:description" content="Professional gutter cleaning, pressure washing & exterior cleaning. Fully insured, AHHA certified. Serving Hawkesbury & Hills District. Free quotes — call 0456 381 191.">
+    <meta property="og:image" content="https://ajguttercleaning.com.au/images/social/og-default-dark.png">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="A&J Gutter Cleaning | Professional Exterior Cleaning Services">
-    <meta name="twitter:description" content="Brighten your home and protect your assets. Professional gutter cleaning, pressure washing, and fireplace services in the Hawkesbury and Hills regions.">
+    <meta name="twitter:title" content="A&J Gutter Cleaning | Professional Exterior Cleaning | Hawkesbury & Hills NSW">
+    <meta name="twitter:description" content="Professional gutter cleaning, pressure washing & exterior cleaning. Fully insured, AHHA certified. Serving Hawkesbury & Hills District.">
+    <meta name="twitter:image" content="https://ajguttercleaning.com.au/images/social/og-default-dark.png">
     
     <title>A&J Gutter Cleaning | Professional Exterior Cleaning Services | Hawkesbury & Hills NSW</title>
     
@@ -28,17 +37,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <!-- Favicon -->
-<link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/svg+xml" href="/images/favicons/favicon.svg">
-<link rel="shortcut icon" href="/images/favicons/favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
-<link rel="manifest" href="/images/favicons/site.webmanifest">
+    <link rel="icon" type="image/png" href="/images/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/images/favicons/favicon.svg">
+    <link rel="shortcut icon" href="/images/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
+    <link rel="manifest" href="/images/favicons/site.webmanifest">
     
     <!-- Schema.org LocalBusiness -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
+        "@id": "https://ajguttercleaning.com.au/#business",
         "name": "A&J Gutter Cleaning",
         "image": "https://ajguttercleaning.com.au/images/logo.png",
         "url": "https://ajguttercleaning.com.au",
@@ -64,15 +74,33 @@
             "closes": "17:00"
         },
         "priceRange": "$$",
-        "areaServed": {
-            "@type": "GeoCircle",
-            "geoMidpoint": {
-                "@type": "GeoCoordinates",
-                "latitude": -33.5533,
-                "longitude": 150.7844
+        "areaServed": [
+            {
+                "@type": "AdministrativeArea",
+                "name": "Hawkesbury",
+                "containedIn": {
+                    "@type": "AdministrativeArea",
+                    "name": "New South Wales"
+                }
             },
-            "geoRadius": "50000"
-        },
+            {
+                "@type": "AdministrativeArea",
+                "name": "Hills District",
+                "containedIn": {
+                    "@type": "AdministrativeArea",
+                    "name": "New South Wales"
+                }
+            },
+            {
+                "@type": "GeoCircle",
+                "geoMidpoint": {
+                    "@type": "GeoCoordinates",
+                    "latitude": -33.5533,
+                    "longitude": 150.7844
+                },
+                "geoRadius": "50000"
+            }
+        ],
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Exterior Cleaning Services",
@@ -84,6 +112,158 @@
                 {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Soft Washing"}}
             ]
         }
+    }
+    </script>
+
+    <!-- Schema.org Service: Gutter Cleaning (with confirmed pricing) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Gutter Cleaning",
+        "serviceType": "Gutter Cleaning",
+        "description": "Professional gutter cleaning service including full debris removal, downpipe flushing, before & after photos, and roof inspection. Serving Hawkesbury and Hills District NSW.",
+        "provider": {
+            "@id": "https://ajguttercleaning.com.au/#business"
+        },
+        "areaServed": [
+            {
+                "@type": "AdministrativeArea",
+                "name": "Hawkesbury"
+            },
+            {
+                "@type": "AdministrativeArea",
+                "name": "Hills District"
+            }
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Gutter Cleaning Pricing",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "name": "Gutter Cleaning — Per Metre",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "5.00",
+                        "priceCurrency": "AUD",
+                        "unitText": "per metre"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Gutter Cleaning — Per Metre (Gutter Guard)",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "7.00",
+                        "priceCurrency": "AUD",
+                        "unitText": "per metre"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Gutter Cleaning — Single Storey",
+                    "priceSpecification": {
+                        "@type": "PriceSpecification",
+                        "price": "220.00",
+                        "priceCurrency": "AUD"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Gutter Cleaning — Split Level",
+                    "priceSpecification": {
+                        "@type": "PriceSpecification",
+                        "price": "350.00",
+                        "priceCurrency": "AUD"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Gutter Cleaning — Double Storey",
+                    "priceSpecification": {
+                        "@type": "PriceSpecification",
+                        "price": "450.00",
+                        "priceCurrency": "AUD"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Add-on: Additional Structure",
+                    "priceSpecification": {
+                        "@type": "PriceSpecification",
+                        "price": "100.00",
+                        "priceCurrency": "AUD"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Add-on: Gutter Guard Premium",
+                    "priceSpecification": {
+                        "@type": "PriceSpecification",
+                        "price": "100.00",
+                        "priceCurrency": "AUD"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "name": "Add-on: Gutter Wash",
+                    "priceSpecification": {
+                        "@type": "PriceSpecification",
+                        "price": "100.00",
+                        "priceCurrency": "AUD"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
+    <!-- Schema.org Service: Pressure Washing (no pricing — awaiting confirmation) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Pressure Washing",
+        "serviceType": "Pressure Washing",
+        "description": "Professional pressure washing service for driveways, pathways, concrete, fences, and commercial surfaces. Restores exterior surfaces to original condition. Serving Hawkesbury and Hills District NSW.",
+        "provider": {
+            "@id": "https://ajguttercleaning.com.au/#business"
+        },
+        "areaServed": [
+            {
+                "@type": "AdministrativeArea",
+                "name": "Hawkesbury"
+            },
+            {
+                "@type": "AdministrativeArea",
+                "name": "Hills District"
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org Service: Soft Washing (no pricing — awaiting confirmation) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Soft Washing",
+        "serviceType": "Soft Washing",
+        "description": "Gentle low-pressure exterior cleaning using specialised solutions. Ideal for roofs, rendered walls, facades, and delicate surfaces. Removes algae, mould, and mildew. Serving Hawkesbury and Hills District NSW.",
+        "provider": {
+            "@id": "https://ajguttercleaning.com.au/#business"
+        },
+        "areaServed": [
+            {
+                "@type": "AdministrativeArea",
+                "name": "Hawkesbury"
+            },
+            {
+                "@type": "AdministrativeArea",
+                "name": "Hills District"
+            }
+        ]
     }
     </script>
 </head>
