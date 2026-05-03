@@ -323,13 +323,13 @@ p {
 
 /* === Logo Image Sizing === */
 .logo img {
-    height: 90px;
+    height: 120px;
     width: auto;
     display: block;
     background: transparent;
 }
 .footer-logo img {
-    height: 70px;
+    height: 90px;
     width: auto;
     display: block;
 }
@@ -848,12 +848,12 @@ p {
 
 @media (max-width: 768px) {
     .logo img {
-        height: 65px;
+        height: 90px;
         width: auto;
         background: transparent;
     }
     .footer-logo img {
-        height: 55px;
+        height: 70px;
         width: auto;
     }
 
