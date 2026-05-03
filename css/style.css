@@ -1269,3 +1269,22 @@ p {
 .text-center { text-align: center; }
 .mb-0 { margin-bottom: 0; }
 .mt-xl { margin-top: var(--space-xl); }
+
+/* Gallery labels */
+.gallery-label {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 2px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.before-label {
+    background: #555;
+    color: #fff;
+}
+.after-label {
+    background: var(--color-highlight, #e63946);
+    color: #fff;
+}
